@@ -9,6 +9,13 @@ body {
     background-color: #357cef;
     padding-top: 80px;
 }
+.logo{
+    border-radius:10px;
+    color: black;
+    background-color:aqua;
+    font-size:1rem;
+}
+
 h1{
 font-family:"Sonsie One", system-ui;
 font-weight:400;
