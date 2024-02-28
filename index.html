@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editamos Carro</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&family=Rubik+Lines&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&family=Rubik+Lines&family=Sonsie+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header id="header">
+        <h1>! Carro de Compras ¡</h1>
+       
+    </header>
+
+    <main>
+        <div class="contenedor">
+            <!-- Añadir -->
+            <div class="añadir">
+                <h2>Añadir</h2>
+                <form>
+                    <label>Nombre del producto</label>
+                    <input type="text" id="productoAñadir" name="nombreDelProducto">
+
+                    <label>Valor del producto</label>
+                    <input type="number" id="valorAñadir">
+
+                    <label>Existencia</label>
+                    <input type="number" id="existenciaAñadir">
+
+                    <label>Url Imagen</label>
+                    <input type="text" id="ImagenAñadir">
+
+                    <input class="button" type="button" id="botonAñadir" value="Añadir">
+                </form>
+            </div>
+            <!-- Editar -->
+            <div class="editar">
+                <h2>Editar</h2>
+                <form>
+                    <label>Nombre del producto</label>
+                    <select id="productoEditar">
+                        <option value="">---</option>
+                    </select>
+
+                    <label>Atributo</label>
+                    <select id="atributoEditar">
+                        <option value="">---</option>
+                    </select>
+
+                    <label>Nuevo valor</label>
+                    <input type="text" id="nuevoAtributo">
+
+                    <input class="button" type="button" id="botonEditar" value="Editar">
+                </form>
+            </div>
+
+            <!-- Eliminar -->
+            <div class="eliminar">
+                <h2>Eliminar</h2>
+
+                <form>
+                    <label>Nombre del producto</label>
+                    <select id="productoEliminar">
+                        <option value="">---</option>
+                    </select>
+                    <input class="button" type="button" id="botonEliminar" value="Eliminar">
+                </form>
+            </div>
+        </div>
+
+        <!-- Mostrar el mensaje -->
+        <div class="contenedorMensaje">
+            <div id="mensaje"></div>
+        </div>
+
+        <!-- Productos -->
+        <div class="contenedorProductos">
+            <h2>Productos</h2>
+            
+            
+            <div class="mostrarProductos" id="mostrarProductos">
+                
+            </div>
+        </div>
+        </div>
+    </main>
+    <footer class="pie-pagina">
+        <section class="grupo-1">
+            <div class="box">
+                <div class="conta">
+                    <h4> Contactanos</h4>
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <span >xx-xxxx-xxxx</span>
+                </div>
+                <h4> Ubicacion </h4>
+                <p>Capital Federal, Argentina</p>
+                <iframe class="mapa"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13136.970524825323!2d-58.438763500094026!3d-34.598025650941025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca7cd8404f4f%3A0x887a244d661b4db6!2sAv.%20Medrano%201000%2C%20C1179%20CABA!5e0!3m2!1ses-419!2sar!4v1696940408530!5m2!1ses-419!2sar" width="200" height="200"></iframe></a>
+                </iframe>
+            </div>
+            <div class="box">
+                <h4>Horarios</h4>
+                <p>Lunes a sabado de las X:XX a XX:XX</p>
+                <h4>Seguinos en nuestras redes</h4>
+                <a aria-label="redes" href="https://www.facebook.com/" target="_white"><i
+                        class="fa-brands fa-facebook"></i>
+                </a>
+                <a aria-label="redes" href="https://www.instagram.com/" target="_white"><i
+                        class="fa-brands fa-instagram"></i>
+                    </a>
+               <a aria-label="redes" href="https://www.google.com/" target="_white"><i
+                        class="fa-brands fa-youtube"></i></a>
+            </div>
+        </section>
+  <section class="grupo-2">
+            <p>Copyright © Todos los Derechos Reservados</p>
+        </section>
+    </footer>       
+   
+<br>
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
